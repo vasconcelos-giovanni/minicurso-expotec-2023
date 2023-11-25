@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                text-align: center;
+            }
+
+            button {
+                padding: 5px 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: white;
+                font-size: 0.8rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/128/4330/4330587.png" />
+
+            <h1>Vou revelar o seu destino!</h1>
+
+            <p>Faça uma pergunta de "sim" ou "não" e seu futuro será revelado por uma grande profecia!</p>
+
+            <input placeholder="Digite sua pergunta" />
+            <button class="btn btn-primary" onclick="mostrarResposta()">Advinhar</button>
+        </div>
+
+        <script>
+            const respostas = [
+                "Com certeza!",
+                "Não tenho certeza.",
+                "Certamente!",
+                "Eu não contaria com isso.",
+                "Sem dúvidas!",
+            ];
+
+            function mostrarResposta() {
+                const numeroAleatorio = Math.floor(Math.random() * 5);
+                
+                alert(respostas[numeroAleatorio]);
+            }
+        </script>
+    </body>
+
+</html>
